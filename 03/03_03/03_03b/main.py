@@ -7,3 +7,10 @@ user_preferences = {
     "volume_level": 80,
     "date_format": "MM/DD/YYYY"
 }
+
+user_preferences["language"] = "Spanish"
+del user_preferences["currency"]
+
+removed_item = user_preferences.pop("date_format", "N/A")
+
+print(user_preferences)
